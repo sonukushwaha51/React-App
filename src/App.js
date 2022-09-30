@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
-import MainBlock from './components/main-block-homepage';
+import Home from './components/Home';
+import './styles.css';
 
 function App() {
   return (
