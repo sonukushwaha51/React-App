@@ -1,0 +1,10 @@
+.container.headers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0px;
+  }
+  .container.footers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0px;
+  }
