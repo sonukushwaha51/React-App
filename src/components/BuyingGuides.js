@@ -2,20 +2,20 @@ import React from "react";
 import FooterComponent from "./FooterComp";
 import HeaderComponent from "./HeaderComp";
 
-function Category() {
+function BuyingGuides() {
     return(
         <React.Fragment>
             <div className="container">
                 <div className="row">
-                <HeaderComponent></HeaderComponent>
+                <HeaderComponent />
                     <div className="container">
-                        <div className="row">
-                            <div className="categor-main-block">
-                                This is category page
+                        <div className="row>">
+                            <div className="buying-guides-block">
+                                <h1>This is Buying Guides page.</h1>
                             </div>
                         </div>
                     </div>
-                    <FooterComponent></FooterComponent>   
+                    <FooterComponent />
                 </div>
             </div>
             
@@ -23,4 +23,4 @@ function Category() {
     );
 }
 
-export default Category;
+export default BuyingGuides;

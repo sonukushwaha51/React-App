@@ -49,3 +49,8 @@
   color: #323232;
   font-weight: 400;
 }
+
+.nav-link.active {
+  text-decoration: none;
+  color: #fff;
+}
