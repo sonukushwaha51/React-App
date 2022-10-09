@@ -54,3 +54,26 @@
   text-decoration: none;
   color: #fff;
 }
+.dropdown .dropdown-toggle::after,.dropdown-toggle::before {
+  display: none;
+}
+.dropdown-toggle, .dropdown-menu {
+  width: 100%;
+  padding: 0px !important;
+}
+
+.category-type.dropdown-item {
+
+  background-color: grey;
+}
+.category-name {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+.category-type.dropdown-item .category-name:hover {
+  text-decoration: none;
+}
+.btn.btn-secondary {
+  width: 100%;
+}

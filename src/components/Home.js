@@ -1,10 +1,7 @@
-import React,{Component} from "react";
-import { NavLink, Routes,Route, Navigate, BrowserRouter} from "react-router-dom";
+import React from "react";
 import HeaderComponent from "./HeaderComp";
 import MainBlock from "./main-block-homepage";
 import FooterComponent from "./FooterComp";
-import Contact from "./Contact";
-import Category from "./Category";
 
 function Home() {
     return(

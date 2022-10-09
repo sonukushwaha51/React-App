@@ -1,9 +1,8 @@
-import { NavLink } from "react-router-dom";
 import React from "react";
 import HeaderComponent from "./HeaderComp";
 import FooterComponent from "./FooterComp";
 
-function Contact() {
+function Contact(props) {
     return(
         <React.Fragment>
             <div className="container">
@@ -16,6 +15,7 @@ function Contact() {
                             <p className="Contact no.">+91 98437637543</p>
                             <p className="company-address">Lincoln road, Matunga, Dadar, Mumbai - 400012</p>
                             <p className="company-locations">Mumbai, Bangalore, Chennai, Ahemedabad</p>
+                            <p>{props.abc}</p>
                         </div>
                     </div>
                     <FooterComponent />

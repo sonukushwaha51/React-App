@@ -1,4 +1,6 @@
 import React from "react";
+import BestSellers from "./BestSellers";
+import { EditorialBanner } from "./EditorialBanner";
 import FooterComponent from "./FooterComp";
 import HeaderComponent from "./HeaderComp";
 
@@ -8,13 +10,8 @@ function Category() {
             <div className="container">
                 <div className="row">
                 <HeaderComponent></HeaderComponent>
-                    <div className="container">
-                        <div className="row">
-                            <div className="categor-main-block">
-                                This is category page
-                            </div>
-                        </div>
-                    </div>
+                    <EditorialBanner></EditorialBanner>
+                    <BestSellers />
                     <FooterComponent></FooterComponent>   
                 </div>
             </div>

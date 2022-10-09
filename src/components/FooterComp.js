@@ -1,5 +1,5 @@
-import React,{Component} from "react";
-import { Routes, Route, BrowserRouter, Navigate ,NavLink} from 'react-router-dom';
+import React from "react";
+import {NavLink} from 'react-router-dom';
 import { Card, Button } from "reactstrap";
 
 function FooterComponent() {

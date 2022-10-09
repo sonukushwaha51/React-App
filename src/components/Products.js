@@ -1,4 +1,4 @@
-export const Products = [
+const Products = [
     {
         id: 123,
         name: "Book ABC",
@@ -8,3 +8,5 @@ export const Products = [
         name: "Book DEF"
     }
 ];
+
+export default Products;
