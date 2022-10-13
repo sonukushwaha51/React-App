@@ -1,8 +1,7 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect,  useState } from "react";
 
 function BestSellers(props) {
-    const abc = "abc";
     const [product, setProduct] = useState([
         // {
         //     id : 1234,
@@ -17,9 +16,7 @@ function BestSellers(props) {
         //axios
         axios.get('https://jsonplaceholder.typicode.com/users').then(pr => {
             setProduct(pr.data)
-            pr.data.map((p) => {return(console.log(p.name))})
         }).catch((res) => {console.log(res.message)});  
-        
     },[])
     return(
         <React.Fragment>
@@ -35,6 +32,9 @@ function BestSellers(props) {
                                     <div className="col-lg-12 col-sm-9 col-md-12">
                                         <div className="product-lists">
                                             <div className="product">
+                                                <p>{props.names.name}</p>
+                                                <p>{props.timer.value}</p>
+                                                <button onClick={props.handleclick}>Click here to remove props</button>
                                                 {product.map((pr) => {
                                                     return(
                                                         <div key={pr.id} className="col-md-4 col-lg-4">

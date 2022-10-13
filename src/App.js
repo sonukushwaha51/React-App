@@ -9,7 +9,15 @@ import Offers from './components/Offers';
 import BuyingGuides from './components/BuyingGuides';
 
 class App extends Component {
-  
+  constructor(props) {
+    super(props);
+    this.state = {isloggedin : false}
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick() {
+      this.setState({isloggedin : true})
+  }
  render() {
   return (
     <React.Fragment>
