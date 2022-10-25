@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Category from './components/Category';
 import Offers from './components/Offers';
 import BuyingGuides from './components/BuyingGuides';
+import MyState from './context/MyState';
 
 class App extends Component {
   constructor(props) {
@@ -18,9 +19,11 @@ class App extends Component {
   handleClick() {
       this.setState({isloggedin : true})
   }
+
  render() {
   return (
     <React.Fragment>
+      <MyState>
       <BrowserRouter>
       <Routes>
           <Route path='/contactus' element={<Contact />} />
@@ -31,6 +34,7 @@ class App extends Component {
           <Route path="*" element={<Home/>} />
         </Routes>
       </BrowserRouter>
+      </MyState>
     </React.Fragment>
     
     

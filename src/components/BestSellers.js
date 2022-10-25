@@ -1,5 +1,6 @@
 import axios from "axios";
-import React, { useEffect,  useState } from "react";
+import React, { useContext, useEffect,  useState } from "react";
+import myContext from "../context/MyContext";
 
 function BestSellers(props) {
     const [product, setProduct] = useState([
@@ -8,6 +9,7 @@ function BestSellers(props) {
         //     name: "Harry"
         // }
     ])
+    const a = useContext(myContext);
     useEffect(() => {
         // fetch('https://jsonplaceholder.typicode.com/users').then((res) => res.json()).then(pr => {
         //     setProduct(pr)
@@ -33,8 +35,9 @@ function BestSellers(props) {
                                         <div className="product-lists">
                                             <div className="product">
                                                 <p>{props.names.name}</p>
-                                                <p>{props.timer.value}</p>
-                                                <button onClick={props.handleclick}>Click here to remove props</button>
+                                                <p>{a.timer}</p>
+                                                <button onClick={a.handleclick}>Click here to increment timer</button>
+                                                <button onClick={props.myCallback}>Click here to remove props</button>
                                                 {product.map((pr) => {
                                                     return(
                                                         <div key={pr.id} className="col-md-4 col-lg-4">
